@@ -64,15 +64,15 @@ def main():
 
   
 # Total de estacionamientos por distrito
-          bike_dist = alt.Chart(df).mark_bar().encode(
-              x=alt.X('Distrito'),
-              y= 'count()').properties(title="Distribución del total de estaciones por Distrito", width=400).interactive()   
-# Total de Anclajes por Distrito
-          bike_dist2 = alt.Chart(df).mark_bar().encode(
-              x=alt.X('Distrito'),
-              y= 'sum(Anclajes)').properties(
-              title='Distribución del total de anclajes por Distrito', width=400).interactive()
-          (bike_dist|bike_dist2)
+#           bike_dist = alt.Chart(df).mark_bar().encode(
+#               x=alt.X('Distrito'),
+#               y= 'count()').properties(title="Distribución del total de estaciones por Distrito", width=400).interactive()   
+# # Total de Anclajes por Distrito
+#           bike_dist2 = alt.Chart(df).mark_bar().encode(
+#               x=alt.X('Distrito'),
+#               y= 'sum(Anclajes)').properties(
+#               title='Distribución del total de anclajes por Distrito', width=400).interactive()
+#           (bike_dist|bike_dist2)
 
     elif app_mode == "Do you use BiciMad?":
           st.title("¿Cuánto utilizas BiciMad?")
